@@ -1,10 +1,11 @@
 import './App.css'
+import Typography from '@material-ui/core/Typography'
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Typography variant="h1" color="primary">Hello World</Typography>
     </>
   )
 }
