@@ -13,6 +13,7 @@ const Appbar = () => {
     <AppBar className="app-bar" sx={{ pl: 0 }}>
       <Toolbar
         sx={{
+          paddingLeft: "0px",
           display: "flex",
           flexDirection: "row",
           justifyContent: "spaceAround",
@@ -20,9 +21,22 @@ const Appbar = () => {
         }}
       >
         <AssignmentTurnedInIcon sx={{ fontSize: 48 }} />
-        <Typography variant="h3">Project Manager Pro</Typography>
-        <IconButton size="large" edge="end" color="inherit" aria-label="menu">
-          <MenuIcon />
+        <box>
+          <Typography
+            variant="h3"
+            sx={{
+              ml: 2,
+              display: "flex",
+              width: "84vw",
+              justofyContent: "center",
+              aignItems: "center",
+            }}
+          >
+            Project Manager Pro
+          </Typography>
+        </box>
+        <IconButton>
+          <MenuIcon sx={{ fontSize: 48, color: "white" }} />
         </IconButton>
       </Toolbar>
     </AppBar>
