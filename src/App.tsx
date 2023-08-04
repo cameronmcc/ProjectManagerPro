@@ -1,13 +1,22 @@
-import './App.css'
-import Typography from '@material-ui/core/Typography'
+import Typography from "@material-ui/core/Typography";
+import { HashRouter } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-      <Typography variant="h1" color="primary">Hello World</Typography>
+      <Typography variant="h1" color="primary">
+        Hello World
+      </Typography>
     </>
-  )
+  );
 }
 
-export default App
+function WrappedApp() {
+  return (
+    <HashRouter>
+      <App />
+    </HashRouter>
+  );
+}
+
+export default WrappedApp;
