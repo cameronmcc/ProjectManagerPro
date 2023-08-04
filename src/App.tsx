@@ -1,12 +1,14 @@
-import Typography from "@material-ui/core/Typography";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Typography variant="h1" color="primary">
-        Hello World
-      </Typography>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </>
   );
 }
