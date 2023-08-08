@@ -3,7 +3,7 @@ import Clients from "../components/Clients.tsx";
 const Home = () => {
   return (
     <>
-      <div> Home </div>
+      <div></div>
       <Clients />
     </>
   );
