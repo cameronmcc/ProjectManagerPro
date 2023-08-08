@@ -9,7 +9,7 @@ import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 
 const Appbar = () => {
   return (
-    <AppBar className="app-bar" sx={{ pl: 0 }}>
+    <AppBar className="app-bar" sx={{ pl: 0, position: "static" }}>
       <Toolbar
         sx={{
           paddingLeft: "0px",

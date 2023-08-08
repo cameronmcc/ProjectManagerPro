@@ -1,10 +1,10 @@
-import Clients from "../components/Clients";
+// import Clients from "../components/Clients";
 
 const Home = () => {
   return (
     <>
       <div> Home </div>
-      <Clients />
+      {/* <Clients /> */}
     </>
   );
 };
