@@ -1,9 +1,10 @@
-import Typography from "@material-ui/core/Typography";
+import Clients from "../components/Clients";
 
 const Home = () => {
   return (
     <>
-      <Typography></Typography>
+      <div> Home </div>
+      <Clients />
     </>
   );
 };
