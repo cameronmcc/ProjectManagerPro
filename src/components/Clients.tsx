@@ -12,14 +12,16 @@ import {
   Box,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+
 import { GET_CLIENTS } from "../queries/clientQueries";
+// import ClientRow from "./ClientRow";
 import Skeletons from "./Skeleton";
 
 export default function Clients() {
   const { loading, error, data } = useQuery(GET_CLIENTS);
 
   if (loading) return <Skeletons />;
-  if (error) return <p>Error </p>;
+  if (error) return <Skeletons />;
 
   return (
     <>
